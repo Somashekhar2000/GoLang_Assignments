@@ -1,0 +1,16 @@
+Assignment 14: Error Handling with Panic and Recover
+Description: In this assignment, you will create a simple program that simulates a situation
+where a panic occurs, and you'll use recover and defer to gracefully handle the panic.
+Instructions:
+1. Write a function called divide that takes two integer arguments, numerator and
+denominator. Inside the function, check if the denominator is zero. If it is, intentionally
+raise a panic using the panic function with an appropriate error message.
+2. Create another function called safeDivide that calls the divide function and uses the
+recover function to handle any panics that may occur.
+3. In the main function, call safeDivide with different values for the numerator and
+denominator. Ensure that you test cases where the denominator is both zero and
+non-zero.
+4. Use a defer statement in the safeDivide function to recover from any panics and print an
+error message instead of crashing the program.
+5. Test your program by calling safeDivide with different inputs and observe how it
+gracefully handles panics and continues execution.

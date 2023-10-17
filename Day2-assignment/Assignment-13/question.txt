@@ -1,0 +1,22 @@
+Assignment 13: Handling File Reading Errors
+Description: In this assignment, you will work with file reading and error handling in Go. You'll
+create a simple program to read a text file, count the number of words, and handle potential
+errors that may occur during the process.
+Instructions:
+1. Create a text file named "sample.txt" with some content. The content can be any text or
+a short paragraph.
+2. Write a Go program that reads the content of the "sample.txt" file and counts the number
+of words in it.
+3. Use the ioutil.ReadFile function to read the file's contents into a byte slice. Handle the
+error that may occur during file reading and print an error message if it occurs.
+4. Implement a function called CountWords that takes the file content as a string and
+returns the number of words in the content.
+5. Handle potential errors within the CountWords function. Specifically, account for cases
+where the input string is empty or contains only whitespace characters.
+6. In the main program, call the CountWords function with the file content and print the
+number of words. Handle any errors returned by the function and print an error message
+in case of an error.
+7. Test your program with different content in the "sample.txt" file, including empty files or
+files containing only spaces, to ensure error handling is working correctly.
+8. At the end try to delete the “sample.txt” file & check if your program is able to handle the
+errors.
